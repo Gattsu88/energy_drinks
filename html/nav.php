@@ -19,17 +19,17 @@
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/wiki.php" ? "current" : "");?> dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wiki<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="wiki.php#uses">1. Uses</a></li>
-                            <li><a href="wiki.php#effects">2. Effects</a></li>
-                            <li><a href="wiki.php#history">3. History</a></li>
-                            <li><a href="wiki.php#variants">4. Variants</a></li>
-                            <li><a href="wiki.php#chemistry">5. Chemistry</a></li>
-                            <li><a href="wiki.php#demographics">6. Demographics</a></li>
-                            <li><a href="wiki.php#sales">7. Sales</a></li>
+                            <li><a href="wiki.php#wiki">1. Drinks</a></li>
+                            <li><a href="wiki.php#uses">2. Uses</a></li>
+                            <li><a href="wiki.php#effects">3. Effects</a></li>
+                            <li><a href="wiki.php#history">4. History</a></li>
+                            <li><a href="wiki.php#variants">5. Variants</a></li>
+                            <li><a href="wiki.php#chemistry">6. Chemistry</a></li>
+                            <li><a href="wiki.php#demographics">7. Demographics</a></li>
+                            <li><a href="wiki.php#sales">8. Sales</a></li>
                         </ul>
                     </li>
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/brands.php" ? "current" : "");?>"><a href="brands.php">Brands</a></li>
-                    <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/fun.php" ? "current" : "");?>"><a href="fun.php">Fun</a></li>
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/faq.php" ? "current" : "");?>"><a href="faq.php">FAQ</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -56,8 +56,8 @@
                             <div id="login-form" class="tab-pane fade in active">
                                 <form action="login.php" method="post">
                                     <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        <label for="username">Username:</label>
+                                        <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
                                     </div>
                                     <div class="form-group">
                                         <label for="pwd">Password:</label>
@@ -68,10 +68,10 @@
                             </div>
 
                             <div id="registration-form" class="tab-pane fade">
-                                <form action="register.php" method="post">
+                                <form action="register.php" method="POST">
                                     <div class="form-group">
-                                        <label for="name">Your Name:</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                                        <label for="name">Username:</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Enter your username" name="username">
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email:</label>
@@ -79,13 +79,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Password:</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                                        <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password">
                                     </div>
                                     <div class="form-group">
                                         <label for="confirmPassword">Confirm Password:</label>
-                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" name="confirmPassword">
+                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" name="confirmPassword">
                                     </div>
-                                    <button type="submit" class="btn btn-danger btn-block"><b>Register</b></button>
+                                    <button type="submit" name="btn-register" class="btn btn-danger btn-block"><b>Register</b></button>
                                 </form>
                             </div>
 

@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: green;
+    color: #eceae0;
     background-image: url('images/background3.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: #daa520;
+    color: #92e601;
 }
 
 h1,h2 {
@@ -21,13 +21,38 @@ h1,h2 {
     background-color: rgba(0,0,0,0.85);
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 15px 30px 0 15px;
+    padding: 15px 35px;
     border: 1px solid #52000a;
     border-radius: 0 10px;
 }
 
+.sidebar {
+    margin-top: 90px;
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
+
 hr {
     border: 1px solid #52000a;
+}
+
+figure {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float:right;
+    font-size: 14px;
+    width:25%;
+    height:25%
+}
+
+figcaption {
+    font-style: italic;
 }
 
 .glyphicon-flash {
@@ -47,6 +72,18 @@ hr {
 .navbar-backgrnd a:hover, .navbar-backgrnd a:active,
 .navbar-backgrnd .current a:link, .navbar-backgrnd .current a:visited {
     color: #b60017;
+}
+
+.img-brand {
+    width: 100%;
+    height: 100%
+}
+
+.img-brand-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .img-thumbnail {

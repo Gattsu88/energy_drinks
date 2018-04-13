@@ -7,8 +7,8 @@ class Db
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $dbname = DB_NAME;
-    private $conn;
-    private $error;
+    protected $dbh;
+    protected $error;
 
     public function __construct()
     {
@@ -17,7 +17,7 @@ class Db
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 
         try {
-            $this->conn = new PDO($dsn,$this->user,$this->pass,$options);
+            $this->dbh = new PDO($dsn,$this->user,$this->pass,$options);
         } catch(PDOException $e) {
             $this->error = $e->getMessage();
         }

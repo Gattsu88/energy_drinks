@@ -18,7 +18,6 @@
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/index.php" ? "current" : "");?>"><a href="index.php">Home</a></li>
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/wiki.php" ? "current" : "");?>"><a href="wiki.php">Wiki</a></li>
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/brands.php" ? "current" : "");?>"><a href="brands.php">Brands</a></li>
-                    <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/fun.php" ? "current" : "");?>"><a href="fun.php">Fun</a></li>
                     <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/faq.php" ? "current" : "");?>"><a href="faq.php">FAQ</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -66,8 +65,8 @@
                             <div id="registration-form" class="tab-pane fade">
                                 <form action="register.php" method="post">
                                     <div class="form-group">
-                                        <label for="name">Your Name:</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                                        <label for="name">Username:</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Enter your username" name="username">
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email:</label>
