@@ -60,7 +60,7 @@ figcaption {
 }
 
 .navbar-backgrnd {
-    background-color: #eceae0;
+    background-color: rgba(0,0,0,0.85);
     border-bottom: 2px solid #52000a;
     margin-bottom: 0;
 }
@@ -132,4 +132,14 @@ figcaption {
 }
 .fa.fa-instagram.fa-2x {
     color: orange;
+}
+
+#currentPage {
+    font-weight: bold;
+    text-decoration: none;
+    color: darkred;
+}
+
+summary {
+    color: #daa520;
 }

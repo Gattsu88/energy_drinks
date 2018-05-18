@@ -2,7 +2,7 @@
     $title = 'FAQ';
     include 'html/header.php';
     include 'html/nav.php';
-    include 'classInit.php';
+    $dbh = require 'bootstrap.php';
 ?>
 
 <div class="container mainContainer">
@@ -10,16 +10,27 @@
         <div class="col-md-7 col-md-offset-1">
             <br><h2>Frequently asked questions</h2><br>
 
-<?php
-    $faq = new Faq();
-    $faq->displayFaq();
-?>
+            <?php
+
+            $query = "SELECT * from faq";
+            $perPage = 4;
+            $paginate = new Paginate($dbh);
+            $newquery = $paginate->paging($query, $perPage);
+
+            foreach($paginate->getData($newquery) as $record) : ?>
+                <h3><?= $record->question; ?></h3>
+                <p><?= $record->answer; ?><p>
+            <?php endforeach;
+
+            $paginate->createLinks($query, $perPage);
+            ?>
+
         </div>
         <div class="col-md-3 col-md-offset-1">
 
         </div>
     </div>
-    
+
 <?php
     include 'html/footer.php';
 ?>

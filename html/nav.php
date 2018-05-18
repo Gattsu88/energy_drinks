@@ -15,8 +15,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/index.php" ? "current" : "");?>"><a href="index.php">Home</a></li>
-                    <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/wiki.php" ? "current" : "");?> dropdown">
+                    <li class="<?= ($_SERVER['PHP_SELF'] == "/energy_drinks/index.php" ? "current" : ""); ?>"><a href="index.php">Home</a></li>
+                    <li class="<?= ($_SERVER['PHP_SELF'] == "/energy_drinks/wiki.php" ? "current" : ""); ?> dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wiki<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="wiki.php#wiki">1. Drinks</a></li>
@@ -29,8 +29,8 @@
                             <li><a href="wiki.php#sales">8. Sales</a></li>
                         </ul>
                     </li>
-                    <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/brands.php" ? "current" : "");?>"><a href="brands.php">Brands</a></li>
-                    <li class="<?php echo ($_SERVER['PHP_SELF'] == "/energy_drinks/faq.php" ? "current" : "");?>"><a href="faq.php">FAQ</a></li>
+                    <li class="<?= ($_SERVER['PHP_SELF'] == "/energy_drinks/brands.php" ? "current" : ""); ?>"><a href="brands.php">Brands</a></li>
+                    <li class="<?= ($_SERVER['PHP_SELF'] == "/energy_drinks/faq.php" ? "current" : ""); ?>"><a href="faq.php">FAQ</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="btn pull-left" role="button" data-toggle="modal" data-target=".login-register-form"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

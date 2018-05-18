@@ -62,7 +62,7 @@
             herbal extracts, taurine, and amino acids. They are a subset of the larger group of energy products, which includes bars and gels, and distinct from
             sports drinks, which are advertised to enhance sports performance. There are many brands and varieties in this beverage category.</p>
 
-            <h4>Which energy drink has the most caffeine?</h4>
+            <h4>Which energy drink has the most caffeine?</h4><br>
             <details>
                 <summary>Energy Drink</summary>
                 <ul>
