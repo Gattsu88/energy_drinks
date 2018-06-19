@@ -126,4 +126,4 @@
         </div>
     </div>
 <?php
-include 'html/footer.php';
+    include 'html/footer.php';

@@ -1,6 +1,6 @@
 <?php
 
-class Paginate
+class Pagination
 {
     private $dbh;
 

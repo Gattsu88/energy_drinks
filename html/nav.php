@@ -84,7 +84,7 @@
                                     <div class="form-group">
                                         <label for="confirmPassword">Confirm Password:</label>
                                         <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" name="confirmPassword">
-                                    </div>
+                                    </div>                                    
                                     <button type="submit" name="btn-register" class="btn btn-danger btn-block"><b>Register</b></button>
                                 </form>
                             </div>

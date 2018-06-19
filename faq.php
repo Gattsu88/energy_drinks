@@ -14,7 +14,7 @@
 
             $query = "SELECT * from faq";
             $perPage = 4;
-            $paginate = new Paginate($dbh);
+            $paginate = new Pagination($dbh);
             $newquery = $paginate->paging($query, $perPage);
 
             foreach($paginate->getData($newquery) as $record) : ?>

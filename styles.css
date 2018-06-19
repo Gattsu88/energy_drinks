@@ -143,3 +143,17 @@ figcaption {
 summary {
     color: #daa520;
 }
+
+.alerts {
+        text-align: center;
+        font-weight: bold;
+        border-radius: 3px;
+}
+
+#errorColor {
+    color: darkred;
+}
+
+#messageColor {
+    color: darkgreen;
+}
