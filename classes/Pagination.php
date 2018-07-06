@@ -1,17 +1,20 @@
 <?php
 
+namespace Classes;
+use Pdo;
+
 class Pagination
 {
     private $dbh;
 
-    function __construct($dbh)
+    function __construct(Db $dbh)
     {
         $this->dbh = $dbh;
     }
 
     public function getData($query)
     {
-        $stmt = $this->dbh->prepare($query);
+        $stmt = $this->dbh->getDb()->prepare($query);
         $stmt->execute();
         if($stmt->rowCount() > 0) {
             return $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -32,7 +35,7 @@ class Pagination
 
         $reload = $_SERVER['PHP_SELF'];
 
-        $stmt = $this->dbh->prepare($query);
+        $stmt = $this->dbh->getDb()->prepare($query);
         $stmt->execute();
 
         $allRecords = $stmt->rowCount();

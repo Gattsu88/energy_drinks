@@ -1,18 +1,23 @@
 <?php
 
+namespace Classes;
+use Pdo;
+
 class Db
 {
-    public static function connect($config)
+    private $db;
+
+    public function __construct()
     {
         try {
-            return new Pdo(
-                $config['db_dsn'],
-                $config['db_user'],
-                $config['db_pass'],
-                $config['db_options']
-            );
+            $this->db = new Pdo("mysql:host=localhost;dbname=energy_drinks", "root", "223121");
         } catch(PDOException $e) {
-            die($e->getMessage());
+            $e->getMessage();
         }
+    }
+
+    public function getDb()
+    {
+        return $this->db;
     }
 }

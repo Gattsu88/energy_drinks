@@ -2,9 +2,6 @@
     $title = 'Register';
     include 'html/header.php';
     include 'html/nav.php';
-    $dbh = require 'bootstrap.php';
-
-    $user = new User($dbh);
 
     if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn-register'])) {
         $user->userRegister();

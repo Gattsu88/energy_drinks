@@ -1,12 +1,14 @@
 <?php
 
+namespace Classes;
+
 class User
 {
     private $dbh;
     private $messages = [];
     private $errors = [];
 
-    public function __construct($dbh)
+    public function __construct(Db $dbh)
     {
         $this->dbh = $dbh;
     }
@@ -24,7 +26,7 @@ class User
         $this->validatePassword($password, $confirmPassword);
 
         if(empty($this->errors)) {
-            $stmt = $this->dbh->prepare("INSERT into users(username, email, password) values(:username, :email, :hashedPassword)");
+            $stmt = $this->dbh->getDb()->prepare("INSERT into users(username, email, password) values(:username, :email, :hashedPassword)");
             $stmt->bindValue(":username", $username);
             $stmt->bindValue(":email", $email);
             $stmt->bindValue(":hashedPassword", $hashedPassword);

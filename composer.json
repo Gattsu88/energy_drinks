@@ -1,0 +1,17 @@
+{
+    "name": "gattsu/energy_drinks",
+    "authors": [
+        {
+            "name": "Gattsu88",
+            "email": "gattsufullon@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "classes"
+        }
+    }
+}

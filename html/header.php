@@ -1,3 +1,10 @@
+<?php
+    require "vendor/autoload.php";
+    $dbh = new Classes\Db();
+    $paginate = new Classes\Pagination($dbh);
+    $user = new Classes\User($dbh);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
